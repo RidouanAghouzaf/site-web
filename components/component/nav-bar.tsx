@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button"
 
 export function NavBar() {
   return (
-    <header className="fixed top-0 z-50 w-full bg-background shadow-sm">
-      <div className="container flex h-16 items-center justify-between px-4 md:px-6">
-        <nav className="hidden md:flex items-center space-x-4">
+    <header className="fixed top-0 z-50 w-full shadow-sm">
+      <div className="container flex h-16 items-center justify-between p-8 md:p-6">
+        <nav className="hidden md:flex items-center space-x-6">
           <Link href="#" className="text-muted-foreground hover:text-foreground" prefetch={false}>
             <TwitterIcon className="h-5 w-5" />
             <span className="sr-only">Twitter</span>
@@ -20,17 +20,17 @@ export function NavBar() {
             <span className="sr-only">LinkedIn</span>
           </Link>
         </nav>
-        <nav className="hidden space-x-4 md:flex">
-          <Link href="#" className="text-sm font-medium text-muted-foreground hover:text-foreground" prefetch={false}>
+        <nav className="hidden space-x-8 md:flex">
+          <Link href="#" className="text-md font-medium text-muted-foreground hover:text-foreground" prefetch={false}>
             Home
           </Link>
-          <Link href="#" className="text-sm font-medium text-muted-foreground hover:text-foreground" prefetch={false}>
+          <Link href="#" className="text-md font-medium text-muted-foreground hover:text-foreground" prefetch={false}>
             About
           </Link>
-          <Link href="#" className="text-sm font-medium text-muted-foreground hover:text-foreground" prefetch={false}>
+          <Link href="#" className="text-md font-medium text-muted-foreground hover:text-foreground" prefetch={false}>
             Services
           </Link>
-          <Link href="#" className="text-sm font-medium text-muted-foreground hover:text-foreground" prefetch={false}>
+          <Link href="#" className="text-md font-medium text-muted-foreground hover:text-foreground" prefetch={false}>
             Contact
           </Link>
         </nav>
@@ -45,7 +45,7 @@ export function NavBar() {
               <span className="sr-only">Toggle navigation</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-full max-w-xs">
+          <SheetContent side="left" className="w-full max-w-xs">
             <div className="grid gap-4 p-4">
               <Link
                 href="#"
